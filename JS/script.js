@@ -24,7 +24,7 @@ async function loadBTCData() {
 		const data = await response.json();
 		const dailyChange = data.bitcoin.daily_change_percent;
 
-		btcTrend = dailyChange >= 0 ? 'up' : 'down';
+		btcTrend = dailyChange > 0 ? 'up' : 'down';
 
 		if (dailyChange === 0) {
 			btcTrend = 'easter';
