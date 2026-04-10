@@ -3,7 +3,7 @@ name: Fetch BTC Price Daily
 on:
   schedule:
     # Runs at minute 0 of every hour (24 times per day)
-    - cron: '0 * * * *'
+    - cron: '14 * * * *'
   # Also allow manual trigger
   workflow_dispatch:
 
