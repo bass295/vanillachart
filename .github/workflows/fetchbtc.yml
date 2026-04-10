@@ -2,12 +2,8 @@ name: Fetch BTC Price Daily
 
 on:
   schedule:
-    # 4:30 PM GMT+1
-    - cron: '30 15 * * *'
-    # 11 PM GMT+1
-    - cron: '0 22 * * *'
-    # 8:00 AM GMT+1 - Morning Check
-    - cron: '0 7 * * *'
+    # Runs at minute 0 of every hour (24 times per day)
+    - cron: '0 * * * *'
   # Also allow manual trigger
   workflow_dispatch:
 
