@@ -2,12 +2,12 @@ name: Fetch BTC Price Daily
 
 on:
   schedule:
-    # 7:30 AM UTC (3:30 AM EST)
-    - cron: '30 7 * * *'
-    # 4:00 PM UTC (12:00 PM EST / 9:00 AM PST) - US Market Open
-    - cron: '0 16 * * *'
-    # 9:00 PM UTC (4:00 PM EST / 1:00 PM PST) - US Market Close
+    # 2:30 PM UTC - US Market Open
+    - cron: '30 14 * * *'
+    # 9:00 PM UTC - US Market Close
     - cron: '0 21 * * *'
+    # 7:00 AM UTC - Morning Check
+    - cron: '0 7 * * *'
   # Also allow manual trigger
   workflow_dispatch:
 
