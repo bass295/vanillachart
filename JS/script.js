@@ -1,98 +1,148 @@
+// ===== CANVAS SETUP =====
 const canvas = document.getElementById('bg-canvas');
-const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d', { alpha: false });
 
 let width, height;
+let animationId;
 
-function resize() {
+function resizeCanvas() {
     width = window.innerWidth;
     height = window.innerHeight;
     canvas.width = width;
     canvas.height = height;
 }
-window.addEventListener('resize', resize);
-resize();
 
-// --- STATE ---
-// Change this to 'down' to see them turn red and fall!
-let currentTrend = 'up'; 
+window.addEventListener('resize', resizeCanvas, false);
+resizeCanvas();
 
-const colors = {
-    up: '#10B981',   // Bullish Green
-    down: '#EF4444'  // Bearish Red
-};
+// ===== BTC TREND STATE =====
+let btcTrend = 'up'; // Default to bullish
 
-// --- OPTIMIZED CANDLE ENGINE (Object Pooling) ---
-const MAX_CANDLES = 60; // Enough to fill the screen, lightweight for the GPU
+// Fetch BTC data from local JSON file (updated 3x daily by GitHub Actions)
+async function loadBTCData() {
+    try {
+        const response = await fetch('./btc-data.json');
+        if (!response.ok) throw new Error('Could not load BTC data');
+        
+        const data = await response.json();
+        const change24h = data.bitcoin.usd_24h_change;
+        
+        // Update trend based on 24h change
+        btcTrend = change24h >= 0 ? 'up' : 'down';
+        
+        // Update UI with price and change
+        const statusEl = document.getElementById('btc-status');
+        const price = data.bitcoin.usd;
+        
+        statusEl.classList.add('show');
+        statusEl.className = `btc-status show ${btcTrend}`;
+        statusEl.innerHTML = `₿ $${price.toLocaleString('en-US', { maximumFractionDigits: 0 })} <br><small>${change24h > 0 ? '+' : ''}${change24h.toFixed(2)}%</small>`;
+        
+        console.log(`BTC loaded: $${price} (${change24h > 0 ? '+' : ''}${change24h.toFixed(2)}%) - Trend: ${btcTrend}`);
+    } catch (error) {
+        console.warn('BTC data not available yet. Using default trend.', error);
+        btcTrend = 'up';
+    }
+}
+
+// Load BTC data on page load
+loadBTCData();
+
+// ===== CANDLE ENGINE =====
+const MAX_CANDLES = 40; // Dense layer of movement
 const candles = [];
 
-// Create a single candle with random properties
-function createCandle(randomizeY = false) {
+function createCandle() {
     return {
         x: Math.random() * width,
-        // If randomizeY is true (on load), scatter them everywhere.
-        // Otherwise, spawn them just off-screen based on the trend.
-        y: randomizeY ? Math.random() * height : (currentTrend === 'up' ? height + 50 : -50),
-        speed: (Math.random() * 1.2) + 0.3, // Varying speeds for depth
-        bodyHeight: (Math.random() * 25) + 10,
-        wickHeight: (Math.random() * 60) + 30,
-        opacity: (Math.random() * 0.3) + 0.05 // Keep them faded and subtle
+        y: Math.random() * height * 1.5,
+        speedX: (Math.random() - 0.5) * 0.8,
+        speedY: (Math.random() * 1) + 1,
+        bodyWidth: (Math.random() * 10) + 5,
+        bodyHeight: (Math.random() * 50) + 25,
+        wickHeight: (Math.random() * 100) + 50,
+        opacity: (Math.random() * 0.7) + 0.25,
+        wobble: Math.random() * Math.PI * 2,
+        wobbleSpeed: (Math.random() * 0.03) + 0.01,
+        phase: Math.random()
     };
 }
 
-// Initialize the pool once
+// Initialize candles
 for (let i = 0; i < MAX_CANDLES; i++) {
-    candles.push(createCandle(true));
+    candles.push(createCandle());
 }
 
-function drawChart() {
-    ctx.clearRect(0, 0, width, height);
+// ===== RENDER LOOP =====
+function render() {
+    ctx.fillStyle = '#0a0a0a';
+    ctx.fillRect(0, 0, width, height);
     
-    const color = colors[currentTrend];
-
+    // Color based on BTC trend
+    const color = btcTrend === 'up' ? '#10b981' : '#ef4444';
+    
     for (let i = 0; i < candles.length; i++) {
-        let c = candles[i];
-
-        // 1. Move the candle based on the trend
-        if (currentTrend === 'up') {
-            c.y -= c.speed; // Float up
-            // Recycle to bottom if it goes off top
-            if (c.y < -100) candles[i] = createCandle(false); 
-        } else {
-            c.y += c.speed; // Fall down
-            // Recycle to top if it goes off bottom
-            if (c.y > height + 100) candles[i] = createCandle(false);
+        const c = candles[i];
+        
+        // Update position - always move upward
+        c.y -= c.speedY;
+        c.wobble += c.wobbleSpeed;
+        c.x += c.speedX + Math.sin(c.wobble) * 0.5;
+        
+        // Recycle when off-screen top
+        if (c.y < -150) {
+            candles[i] = createCandle();
+            candles[i].y = height + 100;
+            continue;
         }
-
-        // 2. Draw the Wick
+        
+        // Wrap sides
+        if (c.x < -50) c.x = width + 50;
+        if (c.x > width + 50) c.x = -50;
+        
+        // ===== DRAW CANDLE =====
+        
+        // Wick
         ctx.beginPath();
         ctx.strokeStyle = color;
-        ctx.globalAlpha = c.opacity;
-        ctx.lineWidth = 1.5;
+        ctx.globalAlpha = c.opacity * 0.7;
+        ctx.lineWidth = 2.5;
         
-        // Center the wick
         const wickTop = c.y - (c.wickHeight / 2);
         const wickBottom = c.y + (c.wickHeight / 2);
         
         ctx.moveTo(c.x, wickTop);
         ctx.lineTo(c.x, wickBottom);
         ctx.stroke();
-
-        // 3. Draw the Body
-        ctx.fillStyle = color;
-        const bodyTop = c.y - (c.bodyHeight / 2);
         
-        // The body sits exactly in the middle of the wick
-        ctx.fillRect(c.x - 3, bodyTop, 6, c.bodyHeight);
+        // Body
+        ctx.fillStyle = color;
+        ctx.globalAlpha = c.opacity * 0.95;
+        const bodyTop = c.y - (c.bodyHeight / 2);
+        ctx.fillRect(c.x - c.bodyWidth / 2, bodyTop, c.bodyWidth, c.bodyHeight);
+        
+        // Glow layers
+        ctx.shadowColor = color;
+        ctx.shadowBlur = 12;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        ctx.globalAlpha = c.opacity * 0.4;
+        ctx.fillRect(c.x - c.bodyWidth / 2 - 2, bodyTop - 2, c.bodyWidth + 4, c.bodyHeight + 4);
+        
+        ctx.shadowBlur = 24;
+        ctx.globalAlpha = c.opacity * 0.15;
+        ctx.fillRect(c.x - c.bodyWidth / 2 - 4, bodyTop - 4, c.bodyWidth + 8, c.bodyHeight + 8);
+        
+        ctx.shadowBlur = 0;
     }
-
-    requestAnimationFrame(drawChart);
+    
+    ctx.globalAlpha = 1;
+    animationId = requestAnimationFrame(render);
 }
 
-// Start the engine
-drawChart();
+render();
 
-// --- DEV TESTING TOGGLE ---
-// Click the screen to instantly flip the trend and watch the physics reverse
-document.body.addEventListener('click', () => {
-    currentTrend = currentTrend === 'up' ? 'down' : 'up';
+// ===== CLEANUP =====
+window.addEventListener('beforeunload', () => {
+    if (animationId) cancelAnimationFrame(animationId);
 });
