@@ -5,18 +5,7 @@ on:
     # 7:30 AM UTC (3:30 AM EST)
     - cron: '30 7 * * *'
     # 4:00 PM UTC (12:00 PM EST / 9:00 AM PST) - US Market Open
-    - cron: '0 16 * * - name: Fetch BTC daily candle from Kraken
-        run: |
-          # Fetch daily candle data and parse it correctly
-          curl -s "https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1440" | jq -r '.result | to_entries[0].value[-1] as $candle | {
-            bitcoin: {
-              usd: ($candle[4] | tonumber),
-              open: ($candle[1] | tonumber),
-              close: ($candle[4] | tonumber),
-              daily_change_percent: ((($candle[4] - $candle[1]) / $candle[1]) * 100)
-            }
-          }' > btc-data.json
-          cat btc-data.json*'
+    - cron: '0 16 * * *'
     # 9:00 PM UTC (4:00 PM EST / 1:00 PM PST) - US Market Close
     - cron: '0 21 * * *'
   # Also allow manual trigger
@@ -32,7 +21,6 @@ jobs:
       
       - name: Fetch BTC daily candle from Kraken
         run: |
-          # Fetch daily candle data and parse it correctly
           curl -s "https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1440" | jq -r '.result | to_entries[0].value[-1] as $candle | {
             bitcoin: {
               usd: ($candle[4] | tonumber),
