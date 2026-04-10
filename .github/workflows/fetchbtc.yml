@@ -21,12 +21,12 @@ jobs:
       
       - name: Fetch BTC daily candle from Kraken
         run: |
-          curl -s "https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1440" | jq -r '.result | to_entries[0].value[-1] as $candle | {
+          curl -s "https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1440" | jq '.result | to_entries[0].value[-1] as $candle | {
             bitcoin: {
               usd: ($candle[4] | tonumber),
               open: ($candle[1] | tonumber),
               close: ($candle[4] | tonumber),
-              daily_change_percent: ((($candle[4] - $candle[1]) / $candle[1]) * 100)
+              daily_change_percent: (((($candle[4] | tonumber) - ($candle[1] | tonumber)) / ($candle[1] | tonumber)) * 100)
             }
           }' > btc-data.json
           cat btc-data.json
