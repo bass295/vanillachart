@@ -25,20 +25,20 @@ async function loadBTCData() {
         if (!response.ok) throw new Error('Could not load BTC data');
         
         const data = await response.json();
-        const change24h = data.bitcoin.usd_24h_change;
+        const dailyChange = data.bitcoin.daily_change_percent;
         
-        // Update trend based on 24h change
-        btcTrend = change24h >= 0 ? 'up' : 'down';
+        // Update trend based on daily candle change (open vs close)
+        btcTrend = dailyChange >= 0 ? 'up' : 'down';
         
-        // Update UI with price and change
+        // Update UI with price and daily change
         const statusEl = document.getElementById('btc-status');
         const price = data.bitcoin.usd;
         
         statusEl.classList.add('show');
         statusEl.className = `btc-status show ${btcTrend}`;
-        statusEl.innerHTML = `₿ $${price.toLocaleString('en-US', { maximumFractionDigits: 0 })} <br><small>${change24h > 0 ? '+' : ''}${change24h.toFixed(2)}%</small>`;
+        statusEl.innerHTML = `₿ $${price.toLocaleString('en-US', { maximumFractionDigits: 0 })} <br><small>${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}%</small>`;
         
-        console.log(`BTC loaded: $${price} (${change24h > 0 ? '+' : ''}${change24h.toFixed(2)}%) - Trend: ${btcTrend}`);
+        console.log(`BTC loaded: $${price} (${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}%) Daily - Trend: ${btcTrend}`);
     } catch (error) {
         console.warn('BTC data not available yet. Using default trend.', error);
         btcTrend = 'up';

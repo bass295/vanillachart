@@ -2,12 +2,13 @@ name: Fetch BTC Price Daily
 
 on:
   schedule:
-    # 7:30 AM UTC
+    # 7:30 AM UTC (3:30 AM EST)
     - cron: '30 7 * * *'
-    # 4:00 PM UTC (US Market Open)
+    # 4:00 PM UTC (12:00 PM EST / 9:00 AM PST) - US Market Open
     - cron: '0 16 * * *'
-    # 9:00 PM UTC (US Market Close)
+    # 9:00 PM UTC (4:00 PM EST / 1:00 PM PST) - US Market Close
     - cron: '0 21 * * *'
+  # Also allow manual trigger
   workflow_dispatch:
 
 jobs:
@@ -18,9 +19,19 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
       
-      - name: Fetch BTC price from CoinGecko
+      - name: Fetch BTC daily candle from Kraken
         run: |
-          curl -s "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true" > btc-data.json
+          # Fetch last 2 days of 1440min (daily) candles from Kraken
+          curl -s "https://api.kraken.com/0/public/OHLC?pair=XBTUSDT&interval=1440" | jq '{
+            bitcoin: {
+              usd: .result.XXBTZUSD[-1][4] | tonumber,
+              daily_change_percent: (((.result.XXBTZUSD[-1][4] - .result.XXBTZUSD[-1][1]) / .result.XXBTZUSD[-1][1]) * 100) | tonumber,
+              open: .result.XXBTZUSD[-1][1] | tonumber,
+              close: .result.XXBTZUSD[-1][4] | tonumber,
+              high: .result.XXBTZUSD[-1][2] | tonumber,
+              low: .result.XXBTZUSD[-1][3] | tonumber
+            }
+          }' > btc-data.json
           cat btc-data.json
       
       - name: Commit and push changes
