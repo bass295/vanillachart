@@ -89,20 +89,9 @@
             gap: 0.5rem;
             margin-top: 1rem;
             padding: 0.5rem 1rem;
-            background: rgba(16, 185, 129, 0.1);
-            border: 1px solid rgba(16, 185, 129, 0.3);
             border-radius: 99px;
             font-size: 0.85rem;
             color: var(--accent-up);
-        }
-        
-        .status::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--accent-up);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
         }
         
         @keyframes pulse {
@@ -264,58 +253,30 @@
             font-size: 0.85rem;
             color: var(--text-secondary);
             border-top: 1px solid var(--border-subtle);
-            margin-top: auto;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 10;
         }
-        
+
+        footer img {
+            max-width: 45px;
+            height: auto;
+            margin-top: 1rem;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        footer img:hover {
+            opacity: 1;
+        }
+
         footer a {
             color: var(--accent-up);
             text-decoration: none;
         }
-        
+
         footer a:hover {
             text-decoration: underline;
-        }
-        
-        /* BTC Status bar */
-        .btc-status {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border-subtle);
-            border-radius: 8px;
-            padding: 0.75rem 1rem;
-            font-size: 0.85rem;
-            z-index: 20;
-            min-width: 160px;
-            text-align: center;
-            display: none;
-        }
-        
-        .btc-status.show {
-            display: block;
-            animation: slideIn 0.3s ease-out;
-        }
-        
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .btc-status.up {
-            border-color: var(--accent-up);
-            color: var(--accent-up);
-        }
-        
-        .btc-status.down {
-            border-color: var(--accent-down);
-            color: var(--accent-down);
         }
         
         /* Animations */
@@ -354,11 +315,5 @@
             .page-wrapper {
                 padding: 1.5rem 1rem;
                 gap: 2rem;
-            }
-            
-            .btc-status {
-                bottom: 1rem;
-                right: 1rem;
-                min-width: 140px;
             }
         }

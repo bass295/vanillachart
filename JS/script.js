@@ -15,10 +15,6 @@ function resizeCanvas() {
 window.addEventListener('resize', resizeCanvas, false);
 resizeCanvas();
 
-// ===== BTC TREND STATE =====
-let btcTrend = 'up'; // Default to bullish
-
-// Fetch BTC data from local JSON file (updated 3x daily by GitHub Actions)
 async function loadBTCData() {
     try {
         const response = await fetch('./btc-data.json');
@@ -27,29 +23,32 @@ async function loadBTCData() {
         const data = await response.json();
         const dailyChange = data.bitcoin.daily_change_percent;
         
-        // Update trend based on daily candle change (open vs close)
         btcTrend = dailyChange >= 0 ? 'up' : 'down';
+
+        if (dailyChange === 0) {
+        btcTrend = 'easter';
+        }
         
-        // Update UI with price and daily change
-        const statusEl = document.getElementById('btc-status');
-        const price = data.bitcoin.usd;
-        
-        statusEl.classList.add('show');
-        statusEl.className = `btc-status show ${btcTrend}`;
-        statusEl.innerHTML = `₿ $${price.toLocaleString('en-US', { maximumFractionDigits: 0 })} <br><small>${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}%</small>`;
-        
-        console.log(`BTC loaded: $${price} (${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}%) Daily - Trend: ${btcTrend}`);
+        // Calculate intensity (0 to 1) based on how far from 0
+        // Cap at 5% for max intensity (can adjust this threshold)
+        btcIntensity = Math.min(Math.abs(dailyChange) / 5, 1);
+        btcIntensity = Math.max(btcIntensity, 0.1); // Floor at 10% minimum
+
+        console.log(`BTC: ${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}% - Intensity: ${(btcIntensity * 100).toFixed(0)}%`);
     } catch (error) {
-        console.warn('BTC data not available yet. Using default trend.', error);
+        console.warn('BTC data not loaded. Using default trend.', error);
         btcTrend = 'up';
     }
 }
+
+let btcTrend = 'up';
+let btcIntensity = 0.5; // Default 50% intensity
 
 // Load BTC data on page load
 loadBTCData();
 
 // ===== CANDLE ENGINE =====
-const MAX_CANDLES = 40; // Dense layer of movement
+const MAX_CANDLES = 40;
 const candles = [];
 
 function createCandle() {
@@ -68,7 +67,6 @@ function createCandle() {
     };
 }
 
-// Initialize candles
 for (let i = 0; i < MAX_CANDLES; i++) {
     candles.push(createCandle());
 }
@@ -78,29 +76,33 @@ function render() {
     ctx.fillStyle = '#0a0a0a';
     ctx.fillRect(0, 0, width, height);
     
-    // Color based on BTC trend
-    const color = btcTrend === 'up' ? '#10b981' : '#ef4444';
+    // Color gets brighter based on intensity
+    let color;
+    if (btcTrend === 'up') {
+        const saturation = 20 + btcIntensity * 80;
+        color = `hsl(140, ${saturation}%, 45%)`;
+    } else if (btcTrend === 'down') {
+        const saturation = 20 + btcIntensity * 80;
+        color = `hsl(0, ${saturation}%, 45%)`;
+    } else {
+        color = `#a855f7`;
+    }
     
     for (let i = 0; i < candles.length; i++) {
         const c = candles[i];
         
-        // Update position - always move upward
         c.y -= c.speedY;
         c.wobble += c.wobbleSpeed;
         c.x += c.speedX + Math.sin(c.wobble) * 0.5;
         
-        // Recycle when off-screen top
         if (c.y < -150) {
             candles[i] = createCandle();
             candles[i].y = height + 100;
             continue;
         }
         
-        // Wrap sides
         if (c.x < -50) c.x = width + 50;
         if (c.x > width + 50) c.x = -50;
-        
-        // ===== DRAW CANDLE =====
         
         // Wick
         ctx.beginPath();
@@ -121,11 +123,9 @@ function render() {
         const bodyTop = c.y - (c.bodyHeight / 2);
         ctx.fillRect(c.x - c.bodyWidth / 2, bodyTop, c.bodyWidth, c.bodyHeight);
         
-        // Glow layers
+        // Glow
         ctx.shadowColor = color;
         ctx.shadowBlur = 12;
-        ctx.shadowOffsetX = 0;
-        ctx.shadowOffsetY = 0;
         ctx.globalAlpha = c.opacity * 0.4;
         ctx.fillRect(c.x - c.bodyWidth / 2 - 2, bodyTop - 2, c.bodyWidth + 4, c.bodyHeight + 4);
         
@@ -142,7 +142,6 @@ function render() {
 
 render();
 
-// ===== CLEANUP =====
 window.addEventListener('beforeunload', () => {
     if (animationId) cancelAnimationFrame(animationId);
 });
