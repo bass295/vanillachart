@@ -37,7 +37,7 @@ async function loadBTCData() {
 		// Update badge
 		const badge = document.getElementById('btc-badge');
 		if (badge) {
-			badge.querySelector('.btc-change').textContent = `${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}%`;
+			badge.querySelector('.btc-change').textContent = `$BTC: ${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}%`;
 			badge.querySelector('.btc-time').textContent = `Last updated: ${lastUpdated}`;
 		}
 
