@@ -1,0 +1,36 @@
+name: Fetch CoinTelegraph News
+
+on:
+  schedule:
+    # Runs every 10 minutes
+    - cron: '*/10 * * * *'
+  # Also allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      
+      - name: Fetch CoinTelegraph RSS feed
+        run: |
+          curl -s "https://api.rss2json.com/v1/api.json?rss_url=https://cointelegraph.com/feed" | jq '.items[:10] | map({
+            title: .title,
+            url: .link,
+            source: "CoinTelegraph",
+            publishedAt: .pubDate
+          })' > news-data.json
+          cat news-data.json
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add news-data.json
+          git commit -m "Update news - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

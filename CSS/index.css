@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+ 
 :root {
   --bg-dark: #0a0a0a;
   --bg-card: rgba(15, 15, 15, 0.8);
@@ -11,17 +11,17 @@
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-strong: rgba(255, 255, 255, 0.12);
 }
-
+ 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 html {
   scroll-behavior: smooth;
 }
-
+ 
 body {
   background-color: var(--bg-dark);
   color: var(--text-primary);
@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+ 
 /* Canvas background */
 #bg-canvas {
   position: fixed;
@@ -43,7 +43,7 @@ body {
   z-index: 0;
   display: block;
 }
-
+ 
 /* Main container */
 .page-wrapper {
   position: relative;
@@ -56,14 +56,14 @@ body {
   gap: 3rem;
   max-width: 100%;
 }
-
+ 
 /* Header / Profile */
 .header {
   text-align: center;
   margin-top: 1rem;
   animation: fadeInDown 0.6s ease-out;
 }
-
+ 
 .header h1 {
   font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 700;
@@ -74,7 +74,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+ 
 .header p {
   color: var(--text-secondary);
   font-size: 0.95rem;
@@ -82,7 +82,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
 }
-
+ 
 .header .status {
   display: inline-flex;
   align-items: center;
@@ -93,7 +93,7 @@ body {
   font-size: 0.85rem;
   color: var(--accent-up);
 }
-
+ 
 @keyframes pulse {
   0%,
   100% {
@@ -103,7 +103,7 @@ body {
     opacity: 0.4;
   }
 }
-
+ 
 /* Content sections */
 .section {
   width: 100%;
@@ -112,7 +112,7 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
-
+ 
 .section-label {
   font-size: 0.75rem;
   font-weight: 700;
@@ -122,7 +122,7 @@ body {
   opacity: 0.7;
   margin-bottom: 0.5rem;
 }
-
+ 
 /* Cards & Buttons */
 .card,
 .btn {
@@ -138,7 +138,7 @@ body {
   overflow: hidden;
   font-size: 1rem;
 }
-
+ 
 .card::before,
 .btn::before {
   content: "";
@@ -156,74 +156,149 @@ body {
   transition: left 0.5s ease;
   pointer-events: none;
 }
-
+ 
 .card:hover::before,
 .btn:hover::before {
   left: 100%;
 }
-
+ 
 .card:hover,
 .btn:hover {
   background: rgba(15, 15, 15, 1);
   border-color: var(--border-strong);
   transform: translateY(-2px);
 }
-
+ 
 .card {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-
+ 
 .card h2 {
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
-
+ 
 .card p {
   color: var(--text-secondary);
   font-size: 0.9rem;
 }
-
+ 
 .card .emoji {
   font-size: 2rem;
 }
-
+ 
 /* Two-column grid for tier-1 */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-
+ 
 @media (min-width: 640px) {
   .grid-2 {
     grid-template-columns: 1fr 1fr;
   }
 }
-
+ 
 /* Button variants */
 .btn {
   text-align: center;
   font-weight: 600;
   border: 1px solid var(--border-subtle);
 }
-
+ 
 .btn.primary {
   background: linear-gradient(135deg, #a855f7, rgba(168, 85, 247, 0.7));
   border-color: #a855f7;
   color: #fff;
   font-weight: 700;
 }
-
+ 
 .btn.primary:hover {
   background: linear-gradient(135deg, #a855f7, #a855f7);
   border-color: #a855f7;
   box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
 }
-
+ 
+/* NEWS TICKER STYLES */
+.news-ticker-section {
+  width: 100%;
+  max-width: 680px;
+  animation: staggerIn 0.6s ease-out forwards;
+  animation-delay: 0.4s;
+}
+ 
+.news-ticker {
+  background: rgba(15, 15, 15, 0.6);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  padding: 0.75rem 0;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.ticker-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ef4444;
+  padding: 0.5rem 1rem 0.25rem;
+  opacity: 0.8;
+}
+ 
+.ticker-content {
+  display: flex;
+  padding: 0.75rem 0;
+  animation: scroll-left 25s linear infinite;
+  gap: 3rem;
+}
+ 
+.news-item {
+  white-space: nowrap;
+  padding: 0 1rem;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.85;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease;
+}
+ 
+.news-item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+ 
+.news-item a {
+  color: #ef4444;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+ 
+.news-item a:hover {
+  color: #fca5a5;
+  text-decoration: underline;
+}
+ 
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 3rem));
+  }
+}
+ 
+.news-ticker:hover .ticker-content {
+  animation-play-state: paused;
+}
+ 
 /* Social icons */
 .socials {
   display: flex;
@@ -232,7 +307,7 @@ body {
   padding: 2rem 1rem;
   border-top: 1px solid var(--border-subtle);
 }
-
+ 
 .icon-btn {
   width: 48px;
   height: 48px;
@@ -246,19 +321,19 @@ body {
   text-decoration: none;
   transition: all 0.25s ease;
 }
-
+ 
 .icon-btn:hover {
   background: var(--text-secondary);
   color: var(--bg-dark);
   border-color: var(--text-secondary);
   transform: scale(1.1);
 }
-
+ 
 .icon-btn svg {
   width: 20px;
   height: 20px;
 }
-
+ 
 /* Footer */
 footer {
   width: 100%;
@@ -271,7 +346,7 @@ footer {
   position: relative;
   z-index: 10;
 }
-
+ 
 footer img {
   max-width: 45px;
   height: auto;
@@ -279,20 +354,20 @@ footer img {
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
-
+ 
 footer img:hover {
   opacity: 1;
 }
-
+ 
 footer a {
   color: var(--accent-up);
   text-decoration: none;
 }
-
+ 
 footer a:hover {
   text-decoration: underline;
 }
-
+ 
 /* Animations */
 @keyframes fadeInDown {
   from {
@@ -304,7 +379,7 @@ footer a:hover {
     transform: translateY(0);
   }
 }
-
+ 
 @keyframes staggerIn {
   from {
     opacity: 0;
@@ -315,11 +390,11 @@ footer a:hover {
     transform: translateY(0);
   }
 }
-
+ 
 .section {
   animation: staggerIn 0.6s ease-out forwards;
 }
-
+ 
 .section:nth-child(2) {
   animation-delay: 0.15s;
 }
@@ -329,11 +404,20 @@ footer a:hover {
 .section:nth-child(4) {
   animation-delay: 0.35s;
 }
-
+ 
 /* Responsive */
 @media (max-width: 640px) {
   .page-wrapper {
     padding: 1.5rem 1rem;
     gap: 2rem;
+  }
+ 
+  .news-item {
+    font-size: 0.85rem;
+    padding: 0 0.75rem;
+  }
+ 
+  .ticker-label {
+    padding: 0.4rem 0.75rem 0.15rem;
   }
 }

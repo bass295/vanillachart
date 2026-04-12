@@ -48,6 +48,46 @@ let btcIntensity = 0.5; // Default 50% intensity
 // Load BTC data on page load
 loadBTCData();
 
+async function loadNews() {
+	try {
+		const response = await fetch(`news-data.json?timestamp=${Date.now()}`);
+		
+		if (!response.ok) throw new Error('Could not load news');
+
+		const articles = await response.json();
+		
+		if (!Array.isArray(articles) || articles.length === 0) {
+			throw new Error('No articles received');
+		}
+
+		// Format articles for ticker display
+		const newsHTML = articles
+			.map(article => {
+				const title = article.title.length > 80 
+					? article.title.substring(0, 80) + '...' 
+					: article.title;
+				return `<a href="${article.url}" target="_blank" rel="noopener" class="news-item">${title}</a>`;
+			})
+			.join('');
+
+		const tickerContent = document.getElementById('news-ticker');
+		// Duplicate news for seamless looping
+		tickerContent.innerHTML = newsHTML + newsHTML;
+
+		console.log(`Loaded ${articles.length} news articles`);
+	} catch (error) {
+		console.warn('News not loaded:', error);
+		const tickerContent = document.getElementById('news-ticker');
+		tickerContent.innerHTML = '<div class="news-item">News unavailable</div>';
+	}
+}
+
+// Load news on page load
+loadNews();
+
+// Refresh news every 10 minutes (match the GitHub Actions schedule)
+setInterval(loadNews, 10 * 60 * 1000);
+
 // ===== CANDLE ENGINE =====
 const MAX_CANDLES = 40;
 const candles = [];
