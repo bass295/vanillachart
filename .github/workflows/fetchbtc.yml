@@ -2,17 +2,17 @@ name: Fetch BTC Price Daily
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 jobs:
   fetch-btc:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      
+
       - name: Fetch BTC daily candle from Kraken
         run: |
           curl -s "https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1440" | jq '.result | to_entries[0].value[-1] as $candle | {
@@ -25,7 +25,7 @@ jobs:
             last_updated: (now | strftime("%Y-%m-%d %H:%M:%S UTC"))
           }' > btc-data.json
           cat btc-data.json
-      
+
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
