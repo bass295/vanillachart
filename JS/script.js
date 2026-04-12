@@ -18,7 +18,7 @@ resizeCanvas();
 
 async function loadBTCData() {
 	try {
-		const response = await fetch('./btc-data.json');
+		const response = await fetch(`btc-data.json?timestamp=${Date.now()}`);
 		if (!response.ok) throw new Error('Could not load BTC data');
 
 		const data = await response.json();
