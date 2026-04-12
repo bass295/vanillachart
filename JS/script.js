@@ -50,14 +50,21 @@ loadBTCData();
 
 async function loadNews() {
 	try {
-		const response = await fetch(`news-data.json?timestamp=${Date.now()}`);
+		const url = `news-data.json?timestamp=${Date.now()}`;
+		console.log('Fetching news from:', url);
 		
-		if (!response.ok) throw new Error('Could not load news');
+		const response = await fetch(url);
+		console.log('Response status:', response.status);
+		
+		if (!response.ok) {
+			throw new Error(`HTTP error! status: ${response.status}`);
+		}
 
 		const articles = await response.json();
+		console.log('Articles received:', articles);
 		
 		if (!Array.isArray(articles) || articles.length === 0) {
-			throw new Error('No articles received');
+			throw new Error('No articles in response');
 		}
 
 		// Format articles for ticker display
@@ -71,22 +78,40 @@ async function loadNews() {
 			.join('');
 
 		const tickerContent = document.getElementById('news-ticker');
-		// Duplicate news for seamless looping
 		tickerContent.innerHTML = newsHTML + newsHTML;
+
+		// Start smooth scrolling
+		startTickerScroll(tickerContent, articles.length);
 
 		console.log(`Loaded ${articles.length} news articles`);
 	} catch (error) {
-		console.warn('News not loaded:', error);
+		console.error('News error:', error);
 		const tickerContent = document.getElementById('news-ticker');
 		tickerContent.innerHTML = '<div class="news-item">News unavailable</div>';
 	}
 }
 
+function startTickerScroll(element, itemCount) {
+	let scrollPos = 0;
+	const speed = 0.5; // pixels per frame (adjust for speed: 0.3=slow, 0.7=fast)
+	
+	function scroll() {
+		scrollPos += speed;
+		element.style.transform = `translateX(-${scrollPos}px)`;
+		
+		// When we've scrolled halfway (to the duplicate), reset smoothly
+		if (scrollPos > element.scrollWidth / 2) {
+			scrollPos = 0;
+		}
+		
+		requestAnimationFrame(scroll);
+	}
+	
+	scroll();
+}
+
 // Load news on page load
 loadNews();
-
-// Refresh news every 10 minutes (match the GitHub Actions schedule)
-setInterval(loadNews, 10 * 60 * 1000);
 
 // ===== CANDLE ENGINE =====
 const MAX_CANDLES = 40;
@@ -128,6 +153,8 @@ function render() {
 	} else {
 		color = `#a855f7`;
 	}
+
+	document.documentElement.style.setProperty('--candle-color', color);
 
 	for (let i = 0; i < candles.length; i++) {
 		const c = candles[i];
