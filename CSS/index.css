@@ -317,12 +317,11 @@ body {
   height: 20px;
 }
 
-/* BTC badge */
+/* BTC badge 
 
 .btc-badge {
-  position: fixed;
+  position:absolute;
   top: 1rem;
-  right: 1rem;
   background: rgba(15, 15, 15, 0.8);
   border: 1px solid var(--candle-color);
   padding: 0.5rem 1rem;
@@ -353,7 +352,7 @@ body {
 .btc-badge:hover {
   background: rgba(15, 15, 15, 1);
   border-color: var(--candle-color);
-}
+}*/
  
 /* Footer */
 footer {
