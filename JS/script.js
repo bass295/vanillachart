@@ -35,7 +35,7 @@ async function loadBTCData() {
 		btcIntensity = Math.min(Math.abs(dailyChange) / 5, 1);
 		btcIntensity = Math.max(btcIntensity, 0.1); // Floor at 10% minimum
 
-		console.log(`BTC: ${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}% - Intensity: ${(btcIntensity * 100).toFixed(0)}%`);
+		//console.log(`BTC: ${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}% - Intensity: ${(btcIntensity * 100).toFixed(0)}%`);
 	} catch (error) {
 		console.warn('BTC data not loaded. Using default trend.', error);
 		btcTrend = 'up';
@@ -51,17 +51,17 @@ loadBTCData();
 async function loadNews() {
 	try {
 		const url = `news-data.json?timestamp=${Date.now()}`;
-		console.log('Fetching news from:', url);
+		//console.log('Fetching news from:', url);
 		
 		const response = await fetch(url);
-		console.log('Response status:', response.status);
+		//console.log('Response status:', response.status);
 		
 		if (!response.ok) {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
 
 		const articles = await response.json();
-		console.log('Articles received:', articles);
+		//console.log('Articles received:', articles);
 		
 		if (!Array.isArray(articles) || articles.length === 0) {
 			throw new Error('No articles in response');
@@ -83,9 +83,9 @@ async function loadNews() {
 		// Start smooth scrolling
 		startTickerScroll(tickerContent, articles.length);
 
-		console.log(`Loaded ${articles.length} news articles`);
+		//console.log(`Loaded ${articles.length} news articles`);
 	} catch (error) {
-		console.error('News error:', error);
+		//console.error('News error:', error);
 		const tickerContent = document.getElementById('news-ticker');
 		tickerContent.innerHTML = '<div class="news-item">News unavailable</div>';
 	}
@@ -93,13 +93,12 @@ async function loadNews() {
 
 function startTickerScroll(element, itemCount) {
 	let scrollPos = 0;
-	const speed = 0.5; // pixels per frame (adjust for speed: 0.3=slow, 0.7=fast)
+	const speed = 0.5; // pixels per frame (0.3=slow, 0.7=fast)
 	
 	function scroll() {
 		scrollPos += speed;
 		element.style.transform = `translateX(-${scrollPos}px)`;
 		
-		// When we've scrolled halfway (to the duplicate), reset smoothly
 		if (scrollPos > element.scrollWidth / 2) {
 			scrollPos = 0;
 		}
