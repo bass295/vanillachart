@@ -25,35 +25,59 @@ async function loadBTCData() {
     const dailyChange = data.bitcoin.daily_change_percent
     const lastUpdated = data.last_updated
 
-    btcTrend = dailyChange > 0 ? "up" : "down"
+    // Check if data is older than 24 hours
+    const lastUpdateTime = new Date(lastUpdated).getTime()
+    const now = Date.now()
+    const hoursOld = (now - lastUpdateTime) / (1000 * 60 * 60)
 
-    if (dailyChange === 0) btcTrend = "easter"
+    if (hoursOld > 24) {
+      btcTrend = "stale"
+      btcIntensity = 0
+      console.warn(
+        `BTC data is ${hoursOld.toFixed(1)} hours old. Showing stale state.`,
+      )
+    } else {
+      btcTrend = dailyChange > 0 ? "up" : "down"
+      if (dailyChange === 0) btcTrend = "easter"
 
-    // Calculate intensity (0 to 1) based on how far from 0
-    // Cap at 5% for max intensity (can adjust this threshold)
-    btcIntensity = Math.min(Math.abs(dailyChange) / 5, 1)
-    btcIntensity = Math.max(btcIntensity, 0.1) // Floor at 10% minimum
+      btcIntensity = Math.min(Math.abs(dailyChange) / 5, 1)
+      btcIntensity = Math.max(btcIntensity, 0.1)
 
-    // Update badge
-    const badge = document.getElementById("btc-badge")
-    if (badge) {
-      badge.querySelector(".btc-change").textContent =
-        `$BTC: ${dailyChange > 0 ? "+" : ""}${dailyChange.toFixed(2)}%`
-      badge.querySelector(".btc-time").textContent =
-        `Ultimo update: ${lastUpdated}`
+      console.log(
+        `BTC: ${dailyChange > 0 ? "+" : ""}${dailyChange.toFixed(2)}% - Intensity: ${(btcIntensity * 100).toFixed(0)}%`,
+      )
     }
 
-    //console.log(`BTC: ${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}% - Intensity: ${(btcIntensity * 100).toFixed(0)}%`);
+    // Update badge
+    /*const badge = document.getElementById("btc-badge")
+    if (badge) {
+      badge.querySelector(".btc-change").textContent =
+        `${dailyChange > 0 ? "+" : ""}${dailyChange.toFixed(2)}%`
+      badge.querySelector(".btc-time").textContent =
+        `Last updated: ${lastUpdated}`
+    } */
+
+    // Hide news ticker if data is stale
+    const newsTicker = document.querySelector(".news-ticker-section")
+    if (newsTicker) {
+      newsTicker.style.display = hoursOld > 24 ? "none" : "block"
+    }
   } catch (error) {
-    console.warn("BTC data not loaded. Using default trend.", error)
-    btcTrend = "up"
+    console.warn("BTC data not loaded. Using stale state.", error)
+    btcTrend = "stale"
+    btcIntensity = 0
+
+    // Hide news ticker on error
+    const newsTicker = document.querySelector(".news-ticker-section")
+    if (newsTicker) {
+      newsTicker.style.display = "none"
+    }
   }
 }
 
 let btcTrend = "up"
 let btcIntensity = 0.5 // Default 50% intensity
 
-// Load BTC data on page load
 loadBTCData()
 
 async function loadNews() {
@@ -158,6 +182,8 @@ function render() {
   } else if (btcTrend === "down") {
     const saturation = 20 + btcIntensity * 80
     color = `hsl(0, ${saturation}%, 45%)`
+  } else if (btcTrend === "stale") {
+    color = `#a855f7`
   } else {
     color = `#a855f7`
   }
