@@ -2,9 +2,7 @@ name: Fetch BTC Price Daily
 
 on:
   schedule:
-    # Runs at minute 0 of every hour (24 times per day)
     - cron: '*/10 * * * *'
-  # Also allow manual trigger
   workflow_dispatch:
 
 jobs:
@@ -23,7 +21,8 @@ jobs:
               open: ($candle[1] | tonumber),
               close: ($candle[4] | tonumber),
               daily_change_percent: (((($candle[4] | tonumber) - ($candle[1] | tonumber)) / ($candle[1] | tonumber)) * 100)
-            }
+            },
+            last_updated: (now | strftime("%Y-%m-%d %H:%M:%S UTC"))
           }' > btc-data.json
           cat btc-data.json
       

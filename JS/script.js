@@ -23,17 +23,23 @@ async function loadBTCData() {
 
 		const data = await response.json();
 		const dailyChange = data.bitcoin.daily_change_percent;
+		const lastUpdated = data.last_updated;
 
 		btcTrend = dailyChange > 0 ? 'up' : 'down';
 
-		if (dailyChange === 0) {
-			btcTrend = 'easter';
-		}
+		if (dailyChange === 0) btcTrend = 'easter';
 
 		// Calculate intensity (0 to 1) based on how far from 0
 		// Cap at 5% for max intensity (can adjust this threshold)
 		btcIntensity = Math.min(Math.abs(dailyChange) / 5, 1);
 		btcIntensity = Math.max(btcIntensity, 0.1); // Floor at 10% minimum
+
+		// Update badge
+		const badge = document.getElementById('btc-badge');
+		if (badge) {
+			badge.querySelector('.btc-change').textContent = `${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}%`;
+			badge.querySelector('.btc-time').textContent = `Last updated: ${lastUpdated}`;
+		}
 
 		//console.log(`BTC: ${dailyChange > 0 ? '+' : ''}${dailyChange.toFixed(2)}% - Intensity: ${(btcIntensity * 100).toFixed(0)}%`);
 	} catch (error) {

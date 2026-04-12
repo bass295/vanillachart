@@ -316,6 +316,44 @@ body {
   width: 20px;
   height: 20px;
 }
+
+/* BTC badge */
+
+.btc-badge {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(15, 15, 15, 0.8);
+  border: 1px solid var(--candle-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  z-index: 20;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btc-change {
+  font-weight: 700;
+  color: var(--candle-color);
+}
+
+.btc-time {
+  display: none;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 0.25rem;
+  white-space: nowrap;
+}
+
+.btc-badge:hover .btc-time {
+  display: block;
+}
+
+.btc-badge:hover {
+  background: rgba(15, 15, 15, 1);
+  border-color: var(--candle-color);
+}
  
 /* Footer */
 footer {
