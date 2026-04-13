@@ -44,7 +44,7 @@ async function loadBTCData() {
       btcIntensity = Math.max(btcIntensity, 0.1)
 
       console.log(
-        `BTC: ${dailyChange > 0 ? "+" : ""}${dailyChange.toFixed(2)}% - Intensity: ${(btcIntensity * 100).toFixed(0)}%`,
+        `BTC: ${dailyChange > 0 ? "+" : ""}${dailyChange.toFixed(2)}% - Intensity: ${(btcIntensity * 100).toFixed(0)}% - Last Updated: ${lastUpdated}`,
       )
     }
 
