@@ -30,7 +30,7 @@ async function loadBTCData() {
     const now = Date.now()
     const hoursOld = (now - lastUpdateTime) / (1000 * 60 * 60)
 
-    if (hoursOld > 24) {
+    if (hoursOld > 12) {
       btcTrend = "stale"
       btcIntensity = 0
       console.warn(
@@ -60,7 +60,7 @@ async function loadBTCData() {
     // Hide news ticker if data is stale
     const newsTicker = document.querySelector(".news-ticker-section")
     if (newsTicker) {
-      newsTicker.style.display = hoursOld > 24 ? "none" : "block"
+      newsTicker.style.display = hoursOld > 12 ? "none" : "block"
     }
   } catch (error) {
     console.warn("BTC data not loaded. Using stale state.", error)
