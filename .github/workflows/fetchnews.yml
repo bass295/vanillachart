@@ -2,8 +2,8 @@ name: Fetch CoinTelegraph News
 
 on:
   schedule:
-    # Runs every 10 minutes
-    - cron: "*/10 * * * *"
+    # Triggers at minutes 10 and 40.
+    - cron: "10,40 * * * *"
   # Also allow manual trigger
   workflow_dispatch:
 
@@ -31,6 +31,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add news-data.json
           git commit -m "Update news - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

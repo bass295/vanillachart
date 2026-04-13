@@ -2,7 +2,8 @@ name: Fetch BTC Price Daily
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    #Triggers cleanly at minutes 5, 20, 35, and 50.
+    - cron: "5,20,35,50 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -32,6 +33,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add btc-data.json
           git commit -m "Update BTC price - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
