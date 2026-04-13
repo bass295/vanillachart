@@ -30,7 +30,7 @@ async function loadBTCData() {
     const now = Date.now()
     const hoursOld = (now - lastUpdateTime) / (1000 * 60 * 60)
 
-    if (hoursOld > 12) {
+    if (hoursOld > 8) {
       btcTrend = "stale"
       btcIntensity = 0
       console.warn(
