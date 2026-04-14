@@ -33,7 +33,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add news-data.json
           git commit -m "Update news - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
-          git pull --rebase origin main
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
