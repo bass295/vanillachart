@@ -1,5 +1,17 @@
 [
   {
+    "title": "Here’s what happened in crypto today",
+    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-18 22:11:00"
+  },
+  {
+    "title": "Kelp restaking platform exploited, $293M drained in attack",
+    "url": "https://cointelegraph.com/news/restaking-platform-kelp-exploited-293-million?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-18 22:06:39"
+  },
+  {
     "title": "Solana futures open interest rose by 20% this week: Is $100 SOL next?",
     "url": "https://cointelegraph.com/news/solana-futures-open-interest-rose-by-20-this-week-is-100-sol-next?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -24,12 +36,6 @@
     "publishedAt": "2026-04-18 12:24:23"
   },
   {
-    "title": "Here’s what happened in crypto today",
-    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-18 12:06:40"
-  },
-  {
     "title": "Stablecoins behave like FX markets as liquidity splits: Eco CEO",
     "url": "https://cointelegraph.com/news/stablecoins-behave-fx-markets-liquidity-splits-eco-ceo?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -52,11 +58,5 @@
     "url": "https://cointelegraph.com/news/circle-launches-usdc-bridge-native-cross-chain-transfers?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-04-18 04:46:50"
-  },
-  {
-    "title": "X's new Cashtags feature drives $1B trading volume in first two days",
-    "url": "https://cointelegraph.com/news/x-cashtags-feature-drives-1-billion-trading-volume-first-two-days?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-18 02:46:56"
   }
 ]
