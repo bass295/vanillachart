@@ -1,5 +1,47 @@
 [
   {
+    "title": "Coinbase is testing AI agents that show up on Slack and email",
+    "url": "https://cointelegraph.com/news/coinbase-introduces-two-ai-agents-assist-workers?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-20 06:07:01"
+  },
+  {
+    "title": "Cloud hosting firm Vercel confirms ‘limited’ hack of user info",
+    "url": "https://cointelegraph.com/news/cloud-hosting-vercel-confirms-limited-hack-user-info?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-20 06:05:56"
+  },
+  {
+    "title": "The quantum gap: Why Bitcoin and Ethereum are taking different paths on security",
+    "url": "https://cointelegraph.com/explained/bitcoin-and-ethereum-quantum-threat-strategy?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-20 05:57:49"
+  },
+  {
+    "title": "Polymarket in talks to raise $400M at a $15B valuation: Report",
+    "url": "https://cointelegraph.com/news/polymarket-seeking-400-million-raise-report?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-20 05:08:17"
+  },
+  {
+    "title": "Hackers impersonated eth.limo team to hijack its domain: Post-mortem",
+    "url": "https://cointelegraph.com/news/eth-limo-domain-hijack-dnssec-social-engineering?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-20 04:57:35"
+  },
+  {
+    "title": "Bitcoin erases weekend gains as US-Iran ceasefire faces pressure",
+    "url": "https://cointelegraph.com/news/bitcoin-erases-weekend-gains-us-iran-ceasefire-falls-under-pressure?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-20 04:15:27"
+  },
+  {
+    "title": "Aave's TVL tanks $8B a day after $293M Kelp DAO hack",
+    "url": "https://cointelegraph.com/news/aave-tvl-falls-8-billion-after-kelp-dao-hack?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-04-20 03:13:37"
+  },
+  {
     "title": "Here’s what happened in crypto today",
     "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -16,47 +58,5 @@
     "url": "https://cointelegraph-magazine.com/spot-bitcoin-etfs-worldcoin-btc-mining-hodlers-digest/?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-04-19 19:22:33"
-  },
-  {
-    "title": "2024 BTC cycle 'dramatically' underperforming previous halvings: Analyst",
-    "url": "https://cointelegraph.com/news/bitcoin-cycle-dramatically-underperform-halving?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-19 18:48:06"
-  },
-  {
-    "title": "Kelp exploit highlights problem with non-isolated DeFi lending: Crypto execs",
-    "url": "https://cointelegraph.com/news/kelp-exploit-non-isolated-defi-lending?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-19 16:37:32"
-  },
-  {
-    "title": "Bitcoin price drops to $75K as new Hormuz closure puts focus on oil",
-    "url": "https://cointelegraph.com/news/bitcoin-price-drops-75k-new-hormuz-closure-focus-oil?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-19 12:27:28"
-  },
-  {
-    "title": "Aluminum giant Alcoa to sell dormant smelter to Bitcoin miner NYDIG: Report",
-    "url": "https://cointelegraph.com/news/alcoa-sells-massena-smelter-nydig-bitcoin-mining-ai-data-centers?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-19 10:19:28"
-  },
-  {
-    "title": "RaveDAO denies manipulation as Binance, Bitget probe RAVE trading activity",
-    "url": "https://cointelegraph.com/news/ravedao-denies-manipulation-binance-bitget-probe-rave-trading?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-19 07:19:50"
-  },
-  {
-    "title": "Charles Schwab, Citadel Securities weigh entering prediction markets",
-    "url": "https://cointelegraph.com/news/charles-schwab-citadel-securities-weighing-prediction-markets?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-19 05:38:54"
-  },
-  {
-    "title": "Caitlyn Jenner escapes memecoin lawsuit as judge says token not a security",
-    "url": "https://cointelegraph.com/news/caitlyn-jenner-escapes-memecoin-lawsuit-judge-says-token-not-security?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-04-19 03:12:32"
   }
 ]
