@@ -1,5 +1,23 @@
 [
   {
+    "title": "Trezor adds native USDt, USDC yield via Morpho integration",
+    "url": "https://cointelegraph.com/news/trezor-usdc-usdt-yield-morpho-trezor-suite?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-05-28 17:28:36"
+  },
+  {
+    "title": "French company abandons crypto treasury strategy, will liquidate Bitcoin holdings",
+    "url": "https://cointelegraph.com/news/sequans-crypto-treasury-strategy-liquidate-holdings?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-05-28 17:22:14"
+  },
+  {
+    "title": "P2P.org launches real-time data stream for Sui and Hyperliquid",
+    "url": "https://cointelegraph.com/press-releases/p2porg-launches-real-time-data-stream-for-sui-and-hyperliquid?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-05-28 16:57:03"
+  },
+  {
     "title": "Argentina bill targets crypto payments to illegal gambling sites",
     "url": "https://cointelegraph.com/news/argentina-bill-crypto-payments-illegal-gambling?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -40,23 +58,5 @@
     "url": "https://cointelegraph.com/news/aave-labs-push-gains-uk-fca-crypto-registration?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-05-28 13:28:01"
-  },
-  {
-    "title": "Samsung units take $408M stake in Upbit operator Dunamu: Report",
-    "url": "https://cointelegraph.com/news/samsung-dunamu-stake-upbit-digital-assets?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-05-28 12:50:07"
-  },
-  {
-    "title": "Ethereum under $2K: ETH whales sell as retail remains bullish",
-    "url": "https://cointelegraph.com/markets/ethereum-under-2k-eth-whales-sell-as-retail-remains-bullish?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-05-28 12:49:31"
-  },
-  {
-    "title": "BlackRock Bitcoin ETF sees near-record outflows as BTC dips below $75K",
-    "url": "https://cointelegraph.com/news/blackrocks-bitcoin-etf-ibit-near-record-outflows-btc-dip?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-05-28 12:22:53"
   }
 ]
