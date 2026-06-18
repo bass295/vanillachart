@@ -1,5 +1,17 @@
 [
   {
+    "title": "CME Group sues CFTC over crypto perpetual futures",
+    "url": "https://cointelegraph.com/news/cme-group-cftc-lawsuit-perpetual-futures-crypto?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-18 17:42:09"
+  },
+  {
+    "title": "Bitcoin miners need billions to fund AI ambitions, led by IREN’s $21B gap",
+    "url": "https://cointelegraph.com/news/bitcoin-miners-50b-ai-pivot-iren-21b-funding-gap?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-18 16:56:58"
+  },
+  {
     "title": "Bybit lands on Singapore MAS Investor Alert List",
     "url": "https://cointelegraph.com/news/bybit-singapore-mas-investor-alert-list?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
     "source": "CoinTelegraph",
@@ -18,10 +30,10 @@
     "publishedAt": "2026-06-18 14:30:00"
   },
   {
-    "title": "Ledn adds Tether Gold as loan collateral, expanding Bitcoin-backed lending model",
+    "title": "Ledn to add Tether Gold as loan collateral, expanding Bitcoin-backed lending model",
     "url": "https://cointelegraph.com/news/ledn-tether-gold-xaut-loans-bitcoin-backed-lending?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
     "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 14:00:00"
+    "publishedAt": "2026-06-18 14:12:00"
   },
   {
     "title": "Here’s what happened in crypto today",
@@ -46,17 +58,5 @@
     "url": "https://cointelegraph.com/markets/bitcoin-market-cap-rebound-to-take-5-10-years-after-dropping-10-places-since-mid-2025?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
     "source": "CoinTelegraph",
     "publishedAt": "2026-06-18 10:29:07"
-  },
-  {
-    "title": "Aztec hit by second $2.1M exploit in less than week: SlowMist",
-    "url": "https://cointelegraph.com/news/aztec-exploited-21-million-previous-hack-slowmist?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 10:28:00"
-  },
-  {
-    "title": "Grayscale applies traditional finance models to AAVE, sees $175 value",
-    "url": "https://cointelegraph.com/news/grayscale-aave-traditional-finance-defi-token-valuation?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 09:45:51"
   }
 ]
