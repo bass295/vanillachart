@@ -1,5 +1,47 @@
 [
   {
+    "title": "AllUnity debuts SEKAU, a fully reserved Swedish krona stablecoin",
+    "url": "https://cointelegraph.com/news/allunity-debut-fully-reserved-swedish-krona-stablecoin-sekau?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-19 07:00:00"
+  },
+  {
+    "title": "Here’s what happened in crypto today",
+    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-19 06:00:00"
+  },
+  {
+    "title": "Algorand plans ‘broad quantum resilience’ by 2027",
+    "url": "https://cointelegraph.com/news/algorand-plans-broad-quantum-resilience-by-2027?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-19 05:51:24"
+  },
+  {
+    "title": "Microsoft warns users of 'Crypto Clipper' malware spread via USB drives",
+    "url": "https://cointelegraph.com/news/microsoft-alerts-users-to-crypto-clipper-windows-malware?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-19 05:33:06"
+  },
+  {
+    "title": "US crypto ETFs are pulling Bitcoiners into TradFi: BlackRock's Jay Jacobs",
+    "url": "https://cointelegraph.com/news/blackrocks-ibit-is-pulling-bitcoiners-into-traditional-finance-exec-says?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-19 04:16:47"
+  },
+  {
+    "title": "Celsius’ Mashinsky gets permanent trading ban in CFTC settlement",
+    "url": "https://cointelegraph.com/news/cftc-permanently-bans-celsius-mashinsky-from-trading?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-19 02:33:11"
+  },
+  {
+    "title": "Ether analysts predict another ‘selling wave’ as ETH struggles to overcome $1.7K",
+    "url": "https://cointelegraph.com/markets/ether-below-17k-gains-interest-as-analysts-warn-of-another-selling-wave?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-19 00:26:39"
+  },
+  {
     "title": "Malta proposes DeFi rulebook covering DAOs under MiCA-era framework",
     "url": "https://cointelegraph.com/news/malta-defi-framework-daos-software-based-organizations-mica?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
     "source": "CoinTelegraph",
@@ -16,47 +58,5 @@
     "url": "https://cointelegraph.com/news/ireland-government-standards-crypto-risk-assessment?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
     "source": "CoinTelegraph",
     "publishedAt": "2026-06-18 21:48:41"
-  },
-  {
-    "title": "US regulators push user ID requirements for stablecoin issuers akin to regulated banks",
-    "url": "https://cointelegraph.com/news/us-agencies-user-identification-stablecoin-issuers?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 21:42:13"
-  },
-  {
-    "title": "Here’s what happened in crypto today",
-    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 21:42:05"
-  },
-  {
-    "title": "Custodia, Vantage propose token that toggles between bank deposits and stablecoins",
-    "url": "https://cointelegraph.com/news/custodia-vantage-unveil-token-that-shifts-between-bank-deposits-and-stablecoins?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 21:02:29"
-  },
-  {
-    "title": "Wealthsimple launches Kalshi-powered prediction market app for Canadian investors",
-    "url": "https://cointelegraph.com/news/wealthsimple-launches-kalshi-powered-prediction-market-app-for-canadian-investors?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 20:07:27"
-  },
-  {
-    "title": "Ethereum Foundation leadership exodus continues with director’s departure",
-    "url": "https://cointelegraph.com/news/ethereum-foundation-leadership-exodus-continues-with-directors-departure?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 19:51:13"
-  },
-  {
-    "title": "Bitcoin’s deeply discounted versus AI-stocks, but hawkish Fed risk lingers: Bitwise",
-    "url": "https://cointelegraph.com/markets/bitcoin-flashes-a-discount-to-ai-stocks-but-hawkish-fed-risk-lingers-bitwise?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 19:41:51"
-  },
-  {
-    "title": "HIVE secures $220M AI infrastructure contract with Bell and Cohere",
-    "url": "https://cointelegraph.com/news/hive-secures-220m-ai-infrastructure-contract-with-bell-and-cohere?utm_source=rss&utm_medium=rss_feed_medium&utm_campaign=rss_feed_medium",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-18 17:54:57"
   }
 ]
