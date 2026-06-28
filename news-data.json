@@ -1,5 +1,11 @@
 [
   {
+    "title": "Base post-mortem reveals sequencer bug behind back-to-back outages",
+    "url": "https://cointelegraph.com/news/base-post-mortem-reveals-sequencer-bug-behind-back-to-back-outages?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-06-28 05:14:05"
+  },
+  {
     "title": "Bitcoin unspent transaction outputs signal capitulation underway: analyst",
     "url": "https://cointelegraph.com/news/bitcoin-unspent-transaction-outputs-signal-capitulation-underway-analyst?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -52,11 +58,5 @@
     "url": "https://cointelegraph.com/news/securitize-expects-to-raise-400m-ahead-of-public-debut?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-06-27 05:35:27"
-  },
-  {
-    "title": "SOL reclaims $72, but onchain data flags weakening momentum",
-    "url": "https://cointelegraph.com/markets/sol-reclaims-72-but-onchain-data-flags-weakening-momentum?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-06-27 02:47:59"
   }
 ]
