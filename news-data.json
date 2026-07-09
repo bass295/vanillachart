@@ -1,5 +1,11 @@
 [
   {
+    "title": "Bitcoin’s quantum dilemma: Bigger blocks or STARK proofs?",
+    "url": "https://cointelegraph.com/features/bigger-blocks-or-stark-proofs-bitcoins-quantum-dilemma?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-07-09 13:30:00"
+  },
+  {
     "title": "Hong Kong regulator orders new anti-phishing measures for crypto platforms",
     "url": "https://cointelegraph.com/news/hong-kong-regulator-anti-phishing-measures-crypto-platforms?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -42,7 +48,7 @@
     "publishedAt": "2026-07-09 09:19:38"
   },
   {
-    "title": "SWIFT launches blockchain ledger with 17-bank tokenized deposit pilot",
+    "title": "Swift launches blockchain ledger with 17-bank tokenized deposit pilot",
     "url": "https://cointelegraph.com/news/swift-launches-blockchain-announces-tokenized-deposit-pilot-with-17-banks?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-07-09 08:51:48"
@@ -52,11 +58,5 @@
     "url": "https://cointelegraph.com/news/regulators-invite-binance-seek-new-license-mica-setback-teng?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-07-09 08:26:30"
-  },
-  {
-    "title": "Russia's largest private bank Alfa-Bank tests crypto trading",
-    "url": "https://cointelegraph.com/news/russia-largest-private-bank-alfa-bank-crypto-services?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-07-09 08:22:36"
   }
 ]
