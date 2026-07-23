@@ -1,5 +1,17 @@
 [
   {
+    "title": "Here’s what happened in crypto today",
+    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-07-23 13:31:28"
+  },
+  {
+    "title": "Fears of AI-driven DeFi hack epidemic overstated for now — but not for long",
+    "url": "https://cointelegraph.com/magazine/ai-hasnt-unleashed-a-defi-hackpocalypse-but-its-making-every-weakness-more-dangerous?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-07-23 13:30:00"
+  },
+  {
     "title": "Strategy-led group pledges $15M to quantum-proof Bitcoin network",
     "url": "https://cointelegraph.com/news/strategy-consortium-15m-quantum-proof-bitcoin?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -12,16 +24,16 @@
     "publishedAt": "2026-07-23 13:00:00"
   },
   {
-    "title": "BitMEX token crashes 90% as exchange announces shutdown",
-    "url": "https://cointelegraph.com/markets/bitmex-token-crashes-90-as-exchange-announces-shutdown?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-07-23 12:47:27"
-  },
-  {
     "title": "Bitget secures license for New Zealand expansion",
     "url": "https://cointelegraph.com/news/bitget-secures-license-new-zealand-expansion?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-07-23 12:33:07"
+  },
+  {
+    "title": "BitMEX token crashes 90% as exchange announces shutdown",
+    "url": "https://cointelegraph.com/markets/bitmex-token-crashes-90-as-exchange-announces-shutdown?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-07-23 12:02:00"
   },
   {
     "title": "Bernstein says Bitcoin mining deals necessary for AI power crunch",
@@ -46,17 +58,5 @@
     "url": "https://cointelegraph.com/markets/bitcoin-will-get-lift-from-hyperliquid-robinhood-in-next-crypto-bull-market-bitwise-exec?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-07-23 10:49:00"
-  },
-  {
-    "title": "Coinbase to expand Singapore office headcount by 25%: Report",
-    "url": "https://cointelegraph.com/news/coinbase-expand-singapore-headcount-25?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-07-23 09:42:53"
-  },
-  {
-    "title": "Bitcoin may have bottomed before its traditional cycle low: Grayscale’s Pandl",
-    "url": "https://cointelegraph.com/markets/grayscale-bitcoins-price-bottomed?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-07-23 09:03:20"
   }
 ]
