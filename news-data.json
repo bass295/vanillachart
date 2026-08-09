@@ -1,5 +1,11 @@
 [
   {
+    "title": "BTCPay restricts remote Lightning access after attackers steal funds",
+    "url": "https://cointelegraph.com/news/btcpay-restricts-remote-lightning-access-after-attackers-steal-funds?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-09 05:46:07"
+  },
+  {
     "title": "Bitcoin’s BIP-110 enters mandatory signaling with miner support below 3%",
     "url": "https://cointelegraph.com/news/bitcoin-bip-110-mandatory-signaling?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -52,11 +58,5 @@
     "url": "https://cointelegraph.com/news/us-treasury-sanctions-iran-crypto-exchanges?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-08-07 20:02:20"
-  },
-  {
-    "title": "Circle expands USDC to OKX ecosystem with X Layer launch",
-    "url": "https://cointelegraph.com/news/circle-native-usdc-okx-x-layer-cctp?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-07 17:36:45"
   }
 ]
