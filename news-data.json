@@ -1,5 +1,53 @@
 [
   {
+    "title": "Mystery surrounds why an OG burned $1M in Bitcoin",
+    "url": "https://cointelegraph.com/magazine/mystery-surrounds-why-an-og-burned-1m-in-bitcoin?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-31 13:30:00"
+  },
+  {
+    "title": "Japanese regulator requests tax filing exemption for trust-type stablecoins in 2027 reform",
+    "url": "https://cointelegraph.com/news/japanese-regulator-tax-exemption-trust-type-stablecoins-2027?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-31 13:20:05"
+  },
+  {
+    "title": "Strategy buys $370M Bitcoin in first corporate purchase since June",
+    "url": "https://cointelegraph.com/news/strategy-buys-370m-bitcoin-first-acquisition-june?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-31 12:45:12"
+  },
+  {
+    "title": "Hyperliquid, Pump.fun account for nearly 90% of record $638M crypto buybacks: FT",
+    "url": "https://cointelegraph.com/news/hyperliquid-pumpfun-90-record-638m-crypto-buybacks?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-31 11:21:57"
+  },
+  {
+    "title": "Markets pivot to September Fed rate hike: Five things to know in Bitcoin this week",
+    "url": "https://cointelegraph.com/markets/markets-pivot-to-september-fed-rate-hike-five-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-31 10:51:49"
+  },
+  {
+    "title": "More Markets lending reserve drained for $9.3M: Blockaid",
+    "url": "https://cointelegraph.com/news/more-markets-lending-reserve-drained-93m?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-31 08:57:10"
+  },
+  {
+    "title": "Here’s what happened in crypto today",
+    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-31 05:59:08"
+  },
+  {
+    "title": "Cronos halts network after Tectonic exploit involving estimated $75M",
+    "url": "https://cointelegraph.com/news/cronos-network-halt-tectonic-exploit-75-million?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-08-31 03:25:48"
+  },
+  {
     "title": "Bitcoin’s new quantum defenses, 18.9M SOL cancelled: Hodler’s Digest",
     "url": "https://cointelegraph.com/magazine/bitcoins-new-quantum-defenses-189m-sol-cancelled-hodlers-digest?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -10,53 +58,5 @@
     "url": "https://cointelegraph.com/news/saylor-signals-strategy-is-back-to-bitcoin-buying?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-08-30 17:59:00"
-  },
-  {
-    "title": "Here’s what happened in crypto today",
-    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-30 12:49:37"
-  },
-  {
-    "title": "Russia’s Sber eyes USDT loans, questions digital ruble demand",
-    "url": "https://cointelegraph.com/news/russia-sber-bank-bitcoin-ether-usdt-crypto-loans?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-30 09:55:00"
-  },
-  {
-    "title": "Real Trump Coins denies launching GOLD token, blames ‘bad actors’",
-    "url": "https://cointelegraph.com/news/real-trump-coins-denies-gold-token-launch?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-30 08:04:56"
-  },
-  {
-    "title": "Polygon discloses security flaws fixed in recent hard forks",
-    "url": "https://cointelegraph.com/news/polygon-discloses-security-flaws-fixed-in-recent-hard-forks?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-29 20:28:51"
-  },
-  {
-    "title": "Stellar tokenized RWA market more than quadruples to nearly $4B",
-    "url": "https://cointelegraph.com/markets/stellar-tokenized-rwa-market-nears-4b-after-fourfold-2026-growth?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-29 19:12:42"
-  },
-  {
-    "title": "Tokenized stock transfer volume jumps 415% in 30 days to $29.5B",
-    "url": "https://cointelegraph.com/markets/tokenized-stock-transfer-volume-jumps-416-in-30-days-to-295b?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-29 16:27:28"
-  },
-  {
-    "title": "Trump-promoted brand touts GOLD before token collapse",
-    "url": "https://cointelegraph.com/news/trump-linked-account-list-gold-token-crash?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-29 10:53:41"
-  },
-  {
-    "title": "Stablecoins not credible for payments at scale, BIS chief says",
-    "url": "https://cointelegraph.com/news/stablecoins-not-credible-payments-scale-bis-chief?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-08-29 08:01:04"
   }
 ]
