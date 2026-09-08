@@ -1,5 +1,41 @@
 [
   {
+    "title": "Here’s what happened in crypto today",
+    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-07 21:10:37"
+  },
+  {
+    "title": "UK financial watchdog weighs lifting prediction markets ban: Report",
+    "url": "https://cointelegraph.com/news/uk-financial-watchdog-prediction-markets-ban?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-07 20:40:17"
+  },
+  {
+    "title": "Ethereum Foundation names 2 ‘must ship’ EIPs for Hegotá upgrade",
+    "url": "https://cointelegraph.com/news/ethereum-foundation-names-2-must-ship-eips-for-hegot-upgrade?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-07 20:21:31"
+  },
+  {
+    "title": "Joe Biden’s son to launch memecoin, will send to TRUMP holders: WSJ",
+    "url": "https://cointelegraph.com/news/hunter-biden-laptop-memecoin-reimburse-trump-holders?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-07 18:53:47"
+  },
+  {
+    "title": "Polish prosecutors charge suspect in Zondacrypto probe, seek pretrial detention",
+    "url": "https://cointelegraph.com/news/polish-prosecutors-charge-man-in-zondacrypto-probe-seek-pretrial-detention?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-07 17:58:00"
+  },
+  {
+    "title": "Bitcoin fund flows show investors trading Fed rate path, not exiting market: CoinShares",
+    "url": "https://cointelegraph.com/markets/crypto-fund-flows-show-investors-trading-fed-rate-path-not-exiting-market-coinshares?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-07 17:29:27"
+  },
+  {
     "title": "Capital B adds 376 Bitcoin in $29M purchase, boosting holdings to 3,521 BTC",
     "url": "https://cointelegraph.com/news/capital-b-adds-376-bitcoin-in-29m-purchase-holdings-reach-3521-btc?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -12,12 +48,6 @@
     "publishedAt": "2026-09-07 15:57:47"
   },
   {
-    "title": "Here’s what happened in crypto today",
-    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-07 12:54:14"
-  },
-  {
     "title": "Zcash hits highest price since 2016 as market cap tops $20B",
     "url": "https://cointelegraph.com/markets/zcash-highest-price-market-cap-20-billion?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -28,35 +58,5 @@
     "url": "https://cointelegraph.com/markets/markets-tilt-toward-september-rate-hikes-five-things-to-know-in-bitcoin-this-week?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-09-07 12:10:22"
-  },
-  {
-    "title": "Citi, DBS complete first weekend tokenized cross-border deposit on Swift",
-    "url": "https://cointelegraph.com/news/dbs-citi-first-weekend-tokenized-deposit-swift?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-07 10:34:47"
-  },
-  {
-    "title": "Philippines eyes payment operator registration freeze, tighter VASP checks",
-    "url": "https://cointelegraph.com/news/philippines-payment-operator-freeze-vasp-checks?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-07 09:51:00"
-  },
-  {
-    "title": "Coldcard third-wave attacker moves 45% of stolen Bitcoin",
-    "url": "https://cointelegraph.com/news/coldcard-third-wave-attacker-moves-bitcoin-stolen?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-07 09:36:19"
-  },
-  {
-    "title": "Fomo overtakes Pump.fun in daily revenue on Solana",
-    "url": "https://cointelegraph.com/news/fomo-pumpfun-revenue-app-solana?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-07 07:45:39"
-  },
-  {
-    "title": "Bitcoin sidechain Liquid pauses after purported ‘white hats’ withdraw $320M in BTC",
-    "url": "https://cointelegraph.com/news/liquid-network-pauses-320m-bitcoin-withdrawal?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-07 05:40:05"
   }
 ]
