@@ -1,5 +1,41 @@
 [
   {
+    "title": "BIS paper finds major gap in Bitcoin onchain transfer estimates",
+    "url": "https://cointelegraph.com/news/bis-paper-finds-major-gap-in-bitcoin-onchain-transfer-estimates?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-15 21:23:00"
+  },
+  {
+    "title": "Crypto stocks slide after CLARITY Act fails to advance in Senate",
+    "url": "https://cointelegraph.com/markets/crypto-stocks-slide-after-clarity-act-fails-to-advance-in-senate?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-15 20:37:34"
+  },
+  {
+    "title": "Here’s what happened in crypto today",
+    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-15 19:53:13"
+  },
+  {
+    "title": "US Senate fails to advance CLARITY Act",
+    "url": "https://cointelegraph.com/news/us-senate-fails-to-advance-clarity-act?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-15 18:46:51"
+  },
+  {
+    "title": "Stablecoin growth could boost dollar dominance, US Treasury demand: BoE official",
+    "url": "https://cointelegraph.com/news/stablecoins-us-dollar-dominance-treasury-demand-boe?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-15 17:53:04"
+  },
+  {
+    "title": "Binance adds 11 US-listed ETFs to wealth management offering",
+    "url": "https://cointelegraph.com/news/binance-adds-11-us-listed-etfs-to-wealth-management-offering?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-15 17:22:04"
+  },
+  {
     "title": "Bitcoin price falls to $75.6K September low as global bonds hit multidecade highs",
     "url": "https://cointelegraph.com/markets/bitcoin-price-falls-to-756k-september-low-as-global-bonds-hit-multidecade-highs?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -22,41 +58,5 @@
     "url": "https://cointelegraph.com/news/usdt-payments-polish-energy-giants-failed-230m-oil-deal?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-09-15 13:37:31"
-  },
-  {
-    "title": "US House crypto tax package omits mining, staking reward deferral",
-    "url": "https://cointelegraph.com/news/us-house-crypto-tax-bill-mining-staking-reward-deferral?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-15 10:04:21"
-  },
-  {
-    "title": "Ethereum, Base wallet standards talks fail, Ethlabs researcher says",
-    "url": "https://cointelegraph.com/news/ethereum-base-wallet-standards-collaboration-breaks?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-15 09:40:27"
-  },
-  {
-    "title": "Bitcoin short-term holders hit 30-day profit streak as bull-market odds improve: CryptoQuant",
-    "url": "https://cointelegraph.com/markets/bitcoin-short-term-holders-hit-30-day-profit-streak-as-bull-market-odds-improve-cryptoquant?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-15 09:30:31"
-  },
-  {
-    "title": "US seeks $61M in USDT allegedly tied to sanctioned Iranian oil sales",
-    "url": "https://cointelegraph.com/news/doj-61m-usdt-forfeiture-iranian-oil?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-15 08:46:35"
-  },
-  {
-    "title": "Solana more than triples transaction size limit with mainnet upgrade",
-    "url": "https://cointelegraph.com/news/solana-transaction-size-limit-4096-bytes-upgrade?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-15 08:18:53"
-  },
-  {
-    "title": "Here’s what happened in crypto today",
-    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-15 05:50:00"
   }
 ]
