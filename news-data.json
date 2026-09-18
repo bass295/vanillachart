@@ -1,9 +1,33 @@
 [
   {
-    "title": "Here’s what happened in crypto today",
-    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "title": "Zcash targets November for NU7 mainnet upgrade with 25-second blocks",
+    "url": "https://cointelegraph.com/news/zcash-nu7-november-mainnet-activation?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
-    "publishedAt": "2026-09-17 20:44:00"
+    "publishedAt": "2026-09-18 04:51:29"
+  },
+  {
+    "title": "Cardano’s IOG warns users to avoid YouTube channel amid apparent hijack",
+    "url": "https://cointelegraph.com/news/cardanos-iog-warns-users-to-avoid-youtube-channel-amid-giveaway-scam?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-18 04:11:40"
+  },
+  {
+    "title": "World launches self-custodial ‘super app’ World Money",
+    "url": "https://cointelegraph.com/news/world-launches-self-custodial-super-app-world-money?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-18 03:40:28"
+  },
+  {
+    "title": "US sanctions Iran’s BitBank, saying it processes ‘Hormuz Safe’ Bitcoin payments",
+    "url": "https://cointelegraph.com/news/us-sanctions-irans-bitbank-saying-it-processes-hormuz-safe-bitcoin-payments?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-18 01:33:54"
+  },
+  {
+    "title": "North Korea drives onchain malware surge, CoinEx shuts: Asia Express",
+    "url": "https://cointelegraph.com/magazine/north-korea-drives-onchain-malware-surge-coinex-shuts-asia-express?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-17 23:49:23"
   },
   {
     "title": "CFTC expands regulatory relief for passive trading software providers",
@@ -34,29 +58,5 @@
     "url": "https://cointelegraph.com/news/former-hut-8-ceo-jaime-leverton-to-lead-zcash-miner-fortitude-ahead-of-nasdaq-listing?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-09-17 15:58:33"
-  },
-  {
-    "title": "OG.com cleared by SEC to offer single-stock futures, says Crypto.com CEO",
-    "url": "https://cointelegraph.com/news/ogcom-cleared-sec-stock-futures-cryptocom-ceo?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-17 13:35:57"
-  },
-  {
-    "title": "SEC grants temporary exemption for tokenized US stock trading",
-    "url": "https://cointelegraph.com/news/sec-temporary-exemption-tokenized-us-stock-trading?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-17 13:34:17"
-  },
-  {
-    "title": "Bitcoin treasury firms can outperform BTC... but is the risk worth taking?",
-    "url": "https://cointelegraph.com/magazine/bitcoin-treasuries-can-outperform-btc-but-is-it-a-risk-worth-taking?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-17 13:30:00"
-  },
-  {
-    "title": "S&amp;P Global to acquire blockchain security platform OpenZeppelin",
-    "url": "https://cointelegraph.com/news/sp-global-openzeppelin-acquisition-blockchain-security?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-17 12:56:23"
   }
 ]
