@@ -1,9 +1,9 @@
 {
   "bitcoin": {
-    "usd": 84413.5,
+    "usd": 84151.5,
     "open": 84384.5,
-    "close": 84413.5,
-    "daily_change_percent": 0.034366500956929294
+    "close": 84151.5,
+    "daily_change_percent": -0.27611705941256987
   },
-  "last_updated": "2026-09-24 00:32:05 UTC"
+  "last_updated": "2026-09-24 05:16:39 UTC"
 }
