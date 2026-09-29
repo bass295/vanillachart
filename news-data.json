@@ -1,5 +1,47 @@
 [
   {
+    "title": "Bitcoin ETF inflows leave institutional demand unclear: CoinShares",
+    "url": "https://cointelegraph.com/markets/bitcoin-etf-mixed-read-institutional-demand-coinshares?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-29 12:40:12"
+  },
+  {
+    "title": "ECB puts AI agent payments on the digital euro drawing board",
+    "url": "https://cointelegraph.com/news/ecb-private-firms-ai-agents-digital-euro?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-29 12:00:45"
+  },
+  {
+    "title": "Ethereum schedules Glamsterdam upgrade on Sepolia for Oct. 6",
+    "url": "https://cointelegraph.com/news/ethereum-glamsterdam-upgrade-sepolia?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-29 10:46:05"
+  },
+  {
+    "title": "US crypto ETF inflows cool after $3.3B week but streaks hold",
+    "url": "https://cointelegraph.com/markets/us-crypto-etf-inflows-cool-bitcoin-ether-solana-xrp?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-29 10:15:19"
+  },
+  {
+    "title": "Bitcoin bounces to $84K after US 30-year bond yield sets 24-year high",
+    "url": "https://cointelegraph.com/markets/bitcoin-bounces-to-84k-after-us-30-year-bond-yield-sets-24-year-high?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-29 10:04:42"
+  },
+  {
+    "title": "Greece gets first MiCA entrants as watchdog denies Binance-Lagarde claim",
+    "url": "https://cointelegraph.com/news/greece-first-mica-entrants-hcmc-binance-lagarde?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-29 09:50:22"
+  },
+  {
+    "title": "BitMine could hit its 5% Ether supply target within weeks — then what?",
+    "url": "https://cointelegraph.com/news/bitmine-ether-supply-target-early-november?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-09-29 08:51:25"
+  },
+  {
     "title": "Here’s what happened in crypto today",
     "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -16,47 +58,5 @@
     "url": "https://cointelegraph.com/news/coinbase-gets-cftc-approval-for-us-derivatives-clearinghouse?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-09-29 04:02:29"
-  },
-  {
-    "title": "Nvidia unveils AI safety platform to rein in ‘rogue’ AI agents",
-    "url": "https://cointelegraph.com/news/nvidia-unveils-ai-safety-platform-to-rein-in-rogue-ai-agents?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-29 02:32:36"
-  },
-  {
-    "title": "NEAR Intents says it blocked $50M tied to Bitget hackers",
-    "url": "https://cointelegraph.com/news/near-intents-says-it-blocked-50m-tied-to-bitget-hackers?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-29 01:17:49"
-  },
-  {
-    "title": "Canadian ‘crypto king’ set to represent himself at fraud trial",
-    "url": "https://cointelegraph.com/news/canada-aiden-pleterski-fraud-trial-crypto?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-28 20:41:44"
-  },
-  {
-    "title": "Blockchain.com eyes $500M IPO as crypto capital markets thaw: Report",
-    "url": "https://cointelegraph.com/news/blockchain-com-500m-ipo-bloomberg-reports?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-28 20:28:13"
-  },
-  {
-    "title": "US SEC follows CFTC in staff guidance for crypto",
-    "url": "https://cointelegraph.com/news/sec-cftc-staff-guidance-crypto-clarity-fail?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-28 18:39:09"
-  },
-  {
-    "title": "Bybit accepts Franklin Templeton tokenized funds as trading collateral",
-    "url": "https://cointelegraph.com/news/bybit-accepts-franklin-templeton-tokenized-funds-trading-collateral?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-28 18:02:54"
-  },
-  {
-    "title": "Crypto PAC spends $11M to oppose Sherrod Brown in Ohio",
-    "url": "https://cointelegraph.com/news/crypto-industry-spending-ohio-senate-race-sherrod-brown?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-09-28 16:48:00"
   }
 ]
