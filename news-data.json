@@ -1,5 +1,35 @@
 [
   {
+    "title": "Core Lightning warns attackers are targeting unpatched Bitcoin nodes",
+    "url": "https://cointelegraph.com/news/core-lightning-urges-upgrade-amid-reports-attackers-targeting-unpatched-nodes?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-02 04:18:43"
+  },
+  {
+    "title": "Ethereum’s zkAPI brings privacy-preserving API payments to mainnet",
+    "url": "https://cointelegraph.com/news/ethereum-zkapi-private-api-payments-mainnet?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-02 03:34:25"
+  },
+  {
+    "title": "NEAR Intents says its identified the hacker, gives 48-hour ultimatum",
+    "url": "https://cointelegraph.com/news/near-intents-says-its-identified-the-hacker-gives-48-hour-ultimatum?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-02 02:02:13"
+  },
+  {
+    "title": "SEC moves to clear custody hurdle for advisers offering crypto",
+    "url": "https://cointelegraph.com/news/sec-moves-to-clear-custody-hurdle-for-advisers-offering-crypto?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-02 01:07:08"
+  },
+  {
+    "title": "China warns foreign spies about crypto, Singapore dominates Asia: Asia Express",
+    "url": "https://cointelegraph.com/magazine/china-claims-crypto-used-by-spies-singapore-dominates-asian-crypto-asia-express?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-01 23:17:47"
+  },
+  {
     "title": "Evernorth clears shareholder vote ahead of Nasdaq debut with 473M XRP treasury",
     "url": "https://cointelegraph.com/news/evernorth-clears-shareholder-vote-ahead-nasdaq-debut-473m-xrp-treasury?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -28,35 +58,5 @@
     "url": "https://cointelegraph.com/news/illinois-postpones-crypto-tax-industry-lawsuit?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-10-01 18:01:49"
-  },
-  {
-    "title": "New York, Wyoming regulators sign pact to coordinate crypto oversight ",
-    "url": "https://cointelegraph.com/news/new-york-wyoming-regulators-sign-pact-coordinate-crypto-oversight?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-01 16:12:23"
-  },
-  {
-    "title": "Bitcoin fights for local uptrend as US bond yields drop from new 24-year highs",
-    "url": "https://cointelegraph.com/markets/bitcoin-fights-local-uptrend-us-bond-yields-drop-from-new-24-year-highs?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-01 15:55:19"
-  },
-  {
-    "title": "NEAR Intents suffers $3.8M exploit after assistance with Bitget breach",
-    "url": "https://cointelegraph.com/news/near-intents-exploit-assistance-bitget-hack?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-01 15:43:34"
-  },
-  {
-    "title": "Bitget’s $388M hack pushes Q3 crypto security losses past $1B",
-    "url": "https://cointelegraph.com/news/bitget-hack-q3-industry-losses-1-26-billion?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-01 13:35:47"
-  },
-  {
-    "title": "LATAM stablecoin liquidity may depend on few providers, investor says",
-    "url": "https://cointelegraph.com/news/latam-stablecoin-liquidity-may-depend-on-few-providers-investor-says?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-01 13:30:00"
   }
 ]
