@@ -1,5 +1,29 @@
 [
   {
+    "title": "Here’s what happened in crypto today",
+    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-14 05:35:52"
+  },
+  {
+    "title": "Starknet introduces wallet privacy feature for DeFi activity",
+    "url": "https://cointelegraph.com/news/starknet-introduces-wallet-privacy-feature-for-defi-activity?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-14 05:32:14"
+  },
+  {
+    "title": "Fed’s Williams sees AI supply squeeze lasting beyond 2 years",
+    "url": "https://cointelegraph.com/markets/feds-williams-sees-ai-supply-squeeze-lasting-beyond-2-years?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-14 05:30:10"
+  },
+  {
+    "title": "Bitwise’s Hougan says Q3 charts point to ‘crypto spring’",
+    "url": "https://cointelegraph.com/markets/bitwises-hougan-says-q3-charts-point-to-crypto-spring?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-10-14 02:19:56"
+  },
+  {
     "title": "Ledger asks resellers to halt sales in Southeast Asia and Hong Kong",
     "url": "https://cointelegraph.com/news/ledger-asks-resellers-to-halt-sales-in-southeast-asia-and-hong-kong?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -10,12 +34,6 @@
     "url": "https://cointelegraph.com/news/tokenized-stocks-after-hours-trading-solana-bnb-chain?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-10-13 19:48:06"
-  },
-  {
-    "title": "Here’s what happened in crypto today",
-    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-13 19:33:57"
   },
   {
     "title": "Trezor reduces resellers as a ‘preventative step’ amid Ledger tampering reports",
@@ -40,23 +58,5 @@
     "url": "https://cointelegraph.com/markets/bitcoin-keeps-up-pressure-on-84k-as-us-stocks-sidestep-korea-tech-sell-off?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-10-13 15:27:32"
-  },
-  {
-    "title": "Anthropic warns ‘AI worms’ may autonomously spread across devices like a virus",
-    "url": "https://cointelegraph.com/news/anthropic-ai-worms-autonomously-spread-devices-virus?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-13 13:55:09"
-  },
-  {
-    "title": "Is Bitcoin kidding itself about the Lightning Network?",
-    "url": "https://cointelegraph.com/magazine/is-bitcoin-kidding-itself-about-the-lightning-network?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-13 13:30:00"
-  },
-  {
-    "title": "Digital cash offers ‘cash-like privacy,’ but bank data breaches threaten users: BIS",
-    "url": "https://cointelegraph.com/news/bis-digital-cash-privacy-bank-data-breaches?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-10-13 13:17:17"
   }
 ]
