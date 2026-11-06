@@ -1,12 +1,42 @@
 [
   {
+    "title": "Bitcoin price dips under $75K as crypto markets miss tech-stock rebound",
+    "url": "https://cointelegraph.com/markets/bitcoin-price-under-75k-crypto-markets-tech-stock?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-11-06 17:49:33"
+  },
+  {
+    "title": "What Democrats’ US midterm sweep means for the CLARITY Act",
+    "url": "https://cointelegraph.com/magazine/clarity-act-faces-new-test-under-democratic-congress?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-11-06 14:30:00"
+  },
+  {
+    "title": "Nigeria sets new crypto licensing rules, bans algorithmic stablecoins",
+    "url": "https://cointelegraph.com/news/nigeria-algorithmic-stablecoin-ban-crypto-licensing?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-11-06 13:57:14"
+  },
+  {
+    "title": "Here’s what happened in crypto today",
+    "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-11-06 13:33:00"
+  },
+  {
+    "title": "Ethereum devs won’t fork Glamsterdam on Hoodi until smart contract risks resolved",
+    "url": "https://cointelegraph.com/news/ethereum-devs-fork-glamsterdam-hoodi-smart-contract-risks?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-11-06 13:23:08"
+  },
+  {
     "title": "Solana’s Shanghai event halted over unauthorized promotion: Report",
     "url": "https://cointelegraph.com/news/solana-shanghai-event-halted-unauthorized-promotion?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-11-06 12:15:28"
   },
   {
-    "title": "Binance hackers had 8 weeks of access before $6.3B exploit, Security Alliance estimates",
+    "title": "Binance hackers had 8-week intrusion window before $6.3B exploit: SEAL",
     "url": "https://cointelegraph.com/news/binance-hackers-8-weeks-access-63b-exploit-security-alliance?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-11-06 11:26:30"
@@ -28,35 +58,5 @@
     "url": "https://cointelegraph.com/news/gopax-halts-crypto-trading-withdrawals-cold-storage?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-11-06 10:47:33"
-  },
-  {
-    "title": "Binance’s $6.3B hack leaves questions over hot wallet safeguards",
-    "url": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-11-06 10:40:57"
-  },
-  {
-    "title": "Zcash NU7 upgrade goes live, leaves 12,224 ZEC stranded in Sprout pool",
-    "url": "https://cointelegraph.com/news/zcash-nu7-upgrade-15m-sprout-funds-unspendable?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-11-06 09:00:36"
-  },
-  {
-    "title": "Hyperliquid Strategies seeks futures registration for perps",
-    "url": "https://cointelegraph.com/news/nasdaq-hyperliquid-strategies-futures-broker-license-onchain-perps?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-11-06 08:42:54"
-  },
-  {
-    "title": "Bitcoin, Ether ETFs post $530M outflows as election gains evaporate",
-    "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-11-06 08:19:18"
-  },
-  {
-    "title": "Chainalysis says breach exposed password hashes and live tokens",
-    "url": "https://cointelegraph.com/news/chainalysis-cyberattack-password-hashes-live-tokens-exposed?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-11-06 06:54:34"
   }
 ]
