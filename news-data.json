@@ -1,5 +1,17 @@
 [
   {
+    "title": "US lawmakers propose up to 30% rewards for prediction market whistleblowers",
+    "url": "https://cointelegraph.com/news/us-prediction-market-whistleblower-rewards-30-percent?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-11-21 07:51:47"
+  },
+  {
+    "title": "Hong Kong pushes to bring crypto custodians, advisers under licensing rules",
+    "url": "https://cointelegraph.com/news/hong-kong-crypto-custody-advisory-licensing-bill?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
+    "source": "CoinTelegraph",
+    "publishedAt": "2026-11-21 05:40:35"
+  },
+  {
     "title": "Wrapped Monero token crashes 99.8% amid suspected $13.5M exploit",
     "url": "https://cointelegraph.com/news/wrapped-monero-token-crashes-998-amid-suspected-135m-exploit?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
@@ -46,17 +58,5 @@
     "url": "https://cointelegraph.com/news/lagarde-europe-limited-window-tokenization-rules?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
     "source": "CoinTelegraph",
     "publishedAt": "2026-11-20 13:21:39"
-  },
-  {
-    "title": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip",
-    "url": "https://cointelegraph.com/news/binance-hacker-600m-eth-routes-thorchain-chainflip?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-11-20 11:31:41"
-  },
-  {
-    "title": "VanEck to end Gemini ETF custody deals, keeps Coinbase",
-    "url": "https://cointelegraph.com/news/vaneck-gemini-etf-custody-end-keep-coinbase?utm_source=rss_feed&utm_medium=feed&utm_campaign=rss_partner_inbound",
-    "source": "CoinTelegraph",
-    "publishedAt": "2026-11-20 10:54:38"
   }
 ]
